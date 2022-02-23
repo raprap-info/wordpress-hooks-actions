@@ -5,7 +5,8 @@
 */
 
 
-#This function can work also inside themes
+#This function can work also inside themes but to safe guard your theme functionalities there is plugin called snippets so that when your code messed up you can easily know and easy to disable.
+
 
 
 add_action ('template_redirect', 'members-only');
@@ -36,5 +37,3 @@ functions log_when_accessed( $date )
     fclose($file);
 
 }
-
-

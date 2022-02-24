@@ -37,3 +37,15 @@ functions log_when_accessed( $date )
     fclose($file);
 
 }
+
+=============
+
+global $wpdb;
+
+$user = wp_get_current_user();
+
+$allowed_roles = array('editor', 'administrator', 'author');
+<?php if( array_intersect($allowed_roles, $user->roles ) ) {  ?>
+   // Stuff here for allowed roles
+<?php } ?>
+ 

@@ -6,8 +6,8 @@
 
 function my_template_array()
 {
-  $temps = []
-  $temps = ['name-of-the-template.php'] = "Name of the Template";
+  $temps = [];
+  $temps['rtemplate.php'] = "Name of the Template";
   
   return $temps;
 }

@@ -34,7 +34,7 @@ function my_template_select($template)
   
   if(isset($templates[page_temp_slug]))
   {
-    $template = $page_temp_slug;
+    $template = plugin_dir_path(__FILE__).'templates/'.$page_temp_slug;
   }
   return $template;
 }

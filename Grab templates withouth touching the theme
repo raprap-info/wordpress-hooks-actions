@@ -32,7 +32,7 @@ function my_template_select($template)
   $page_temp_slug = get_page_template_slug( $post->ID);
   $template = my_template_array();
   
-  if(isset($templates[page_temp_slug]))
+  if(isset($templates[$page_temp_slug]))
   {
     $template = plugin_dir_path(__FILE__).'templates/'.$page_temp_slug;
   }
